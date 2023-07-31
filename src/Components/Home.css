@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+.welcome{
+  /* background-color: aqua; */
+  background-image: url('../img/table-empty.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  font-family: 'Yeon Sung', cursive;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.welcome>h1{
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  font-size: 5rem;
+  font-weight: bolder;
+  color: yellow;
+  /* background-color: yellow; */
+}
+
+.welcome>h3{
+  /* background-color: red; */
+  color: yellow;
+  text-align: center;
+  font-size: 1.55rem;
+  /* font-weight: bolder; */
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  
+ .img-gallery {
+    transition: transform .2s; /* Animation */
+    border: 5px solid white;
+  } 
+
+  .img-gallery:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  #gallery{
+    display: flex;
+    background-color: orange;
+  }
+
+  #left{
+    flex: 1.5;
+    margin-top: 50px;
+    height: auto;
+  }
+
+  #right{
+    width: 55vw;
+    height: auto;
+    flex: 2;
+    /* background-color: violet; */
+}
+
+  #left>h1{
+    padding: 50px;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    color: white;
+  }
+
+  @media screen and (max-width: 768px) {
+    .welcome{
+      background-size: contain;
+      margin-bottom: -200px;
+      /* padding-bottom: 0px; */
+    }
+    .welcome>h1{
+      font-size: 3rem;
+      padding-top: 5px;
+      margin-bottom: 10px;
+    }
+    .welcome>h3{
+      font-size: 1rem;
+    }
+    #left>h1{
+      font-size: 2rem;
+      /* padding: 0; */
+    }
+
+    #gallery{
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+}
+
+  
